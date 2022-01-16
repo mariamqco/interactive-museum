@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo interactivo</title>    
+    <link rel="stylesheet" href="./css/index.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap" rel="stylesheet">    
+    <script src="./js/Collection.js"></script>
+    <script src="./js/Piece.js"></script>
+</head>
+<body>
+    <header class="museum-header"> 
+        <div id="page-title-container">
+            <h1 id="page-title-text">Fósiles vivientes</h1>
+        </div>            
+        <nav id="pieces-navbar">
+            <ul>
+                <li><a href="#piece1">Pieza1</a></li>
+                <li><a href="#piece2">Pieza2</a></li>
+                <li><a href="#piece3">Pieza3</a></li>
+                <li><a href="#piece4">Pieza4</a></li>
+                <li><a href="#piece5">Pieza5</a></li>                         
+        </nav>
+    </header>
+    <main>
+        <section class="welcome-container">         
+            <div id="welcome-text-container">
+                <p>Bienvenido a la colección Fósiles vivientes en la que se muestran algunos de los seres vivos más longevos que han vivido, muchos de los cuales son árboles. Fósil viviente es una expresión antes utilizada para calificar especies no extintas que han evolucionado de manera lenta y conservan rasgos de sus antepasados más antiguos.</p>
+
+                <p>A continuación se muestran algunas piezas de la colección</p>
+
+            </div>   
+
+        </section>
+        <section  class="piece-container" id="piece1">  
+            <h2 class="piece-name">Pando</h2>  
+            <p class="piece-instruction-text">Ubique el mouse sobre los recuadros negros para ver información</p>        
+            <div class="piece-content-container">                
+                <div class="piece-info-container"  onmouseover="showInfoOnMouseOver(this,0,0)" onmouseleave="hideInfoOnMouseLeave(this,0,0)">
+                    <img src="./img/pando.jpg" alt="Pando landscape" class="piece-image">                    
+                </div>
+                <div class="piece-info-container" onmouseover="showInfoOnMouseOver(this,0,1)" onmouseleave="hideInfoOnMouseLeave(this,0,1)">
+                    <img src="./img/pando2.jpg" alt="Pando tree" class="piece-image">
+                </div>
+                <div class="piece-info-container" onmouseover="showInfoOnMouseOver(this,0,2)" onmouseleave="hideInfoOnMouseLeave(this,0,2)">                      
+                    <img src="./img/pando1.jpg" alt="Pando trunk detail" class="piece-image">
+                </div>            
+            </div>        
+        </section>
+
+        
+
+        <section  class="piece-container" id="piece2">
+            <div class="piece-content-container">
+                <img src="" alt="Piece Image">
+                <p class="description-paragraph"></p>
+            </div>                            
+        </section>
+
+
+
+
+        <section  class="piece-container" id="piece3">
+            <img src="" alt="Piece Image">
+            <p class="description-paragraph">
+                
+            </p>
+        </section>
+        <section  class="piece-container" id="piece4">
+            <img src="" alt="Piece Image">
+            <p class="description-paragraph">
+                
+            </p>
+        </section>
+        <section  class="piece-container" id="piece5">
+            <img src="" alt="Piece Image">
+            <p class="description-paragraph">
+                
+            </p>
+        </section>
+        
+        <button onclick="mostrarPando()">Pando</button>
+
+        
+
+    </main>  
+    <script src="./js/index.js"></script>  
+</body>
+</html>

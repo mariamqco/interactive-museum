@@ -22,8 +22,24 @@ class Collection{
             ,
             "Por desgracia, este organismo está en riesgo de desaparecer y esta vez no es por la mano del hombre. La causa de ello son los ciervos y alces que pastan a su alrededor para alimentarse y que causa su deterioro.Debido a la escasa proliferación del puma, su depredador natural, los ciervos pastorean libremente por los alrededores de la colonia clonal. Esto permite que se alimenten de las partes superiores de los troncos que empiezan a formarse, lo que causa su muerte. También se comen los primeros retoños, lo que impide que se formen nuevos árboles. A su vez, esto hace que se frene la renovación natural del sistema.Si a ello le sumamos las enfermedades causadas por hongos y la mancha foliar, es fácil predecir que el sistema en cuestión peligra en los años venideros."
             ]
-            );    
+            );          
         this.pieces.push(piece1); 
+        
+        let piece2 = new Piece("Old Tjikko");
+        piece2.setImage(["./img/Old-Tjikko1.jpg","./img/Old-Tjikko.jpg"])
+        piece2.setDescription(
+            [
+            "El Old Tjikko es una pícea de Noruega de 9558 años de antigüedad, ubicado en el Parque nacional de Fulufjället, Provincia de Dalarna en Suecia. originalmente ganó fama como el árbol más antiguo del mundo. Old Tjikko es, sin embargo, un árbol clonal que ha regenerado nuevos troncos, ramas y raíces durante milenios en lugar de un árbol individual de gran edad. Old Tjikko es el árbol clonado más antiguo del mundo. Sin embargo, hay muchos ejemplos de colonias clonales (múltiples árboles conectados por un sistema de raíces comunes) mucho más antiguas, como Pando."
+            ,
+            "La edad del árbol fue determinada por un test de datación por radiocarbono del sistema de raíces debajo del árbol, no por dendrocronología, es decir contar los anillos del árbol. Alrededor de Old Tjikko hay otros ejemplares de pinos que viven en ese lugar desde el final de la última Edad de Hielo. Muchos de ellos ya superaron los 8.000 años de edad."
+            ,
+            "Tjikko, nacido en la Era Glaciar ha sobrevivido todos estos años gracias a un proceso llamado clonación vegetal: cuando el tronco muere, el sistema central radicular se mantiene vivo, y de él brotan nuevos tallos que, por clonación, regeneran todo el tronco. Los troncos de los árboles que presentan esta capacidad pueden morir y volver a crecer muchas veces y el material genético de cada tronco, siempre es idéntico al anterior."
+            ,
+            "Durante miles de años el árbol no fue más que un arbusto debido a que las condiciones eran muy frías para que pudiera crecer más. Sin embargo, a medida que el planeta se va calentando puede tener un desarrollo normal, tanto es así que ahora mismo mide 5 metros de alto."
+            ]
+            );    
+        this.pieces.push(piece2);     
+            
         }
 
 }

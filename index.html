@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museo interactivo</title>    
-    <link rel="stylesheet" href="./css/index.css">   
+    <link rel="stylesheet" href="./css/index.css">  
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+
     <script src="./js/Collection.js"></script>
     <script src="./js/Piece.js"></script>
 </head>
@@ -19,11 +25,12 @@
         </div>            
         <nav id="pieces-navbar">
             <ul>
-                <li><a href="#piece1">Pieza1</a></li>
-                <li><a href="#piece2">Pieza2</a></li>
-                <li><a href="#piece3">Pieza3</a></li>
-                <li><a href="#piece4">Pieza4</a></li>
-                <li><a href="#piece5">Pieza5</a></li>                         
+                <li><a href="#piece1">Pando</a></li>
+                <li><a href="#piece2">Old-Tjikko</a></li>
+                <li><a href="#piece3">Matusalén</a></li>
+                <li><a href="#piece4">Ginkgo</a></li>
+                <li><a href="#piece5">Tuátara</a></li>
+            </ul>                         
         </nav>
     </header>
     <main>
@@ -57,36 +64,34 @@
         </section>
         <section  class="piece-container" id="piece3">
             <h2 class="piece-name">Matusalén</h2>  
-            <p class="piece-instruction-text">Haciendo click sostenido sobre las imágenes, comenzando por la izquierda,7 verá información de Matusalén</p>
+            <p class="piece-instruction-text">Haciendo click sostenido sobre las imágenes, comenzando por la izquierda, verá información de Matusalén</p>
             <div class="piece-content-container">
                 <div class="piece-info-container" onmousedown="showInfoOnMouseDown(this,2,0)" onmouseup="hideInfoOnMouseUp(this,2,0)">                      
-                    <img src="./img/Methuselah.jpg" alt="Methusaleah" >
+                    <img src="./img/Methuselah.jpg" alt="Methusaleah forest" >
                 </div> 
                 <div class="piece-info-container" onmousedown="showInfoOnMouseDown(this,2,1)" onmouseup="hideInfoOnMouseUp(this,2,1)">                      
-                    <img src="./img/Methuselah1.jpg" alt="Methusaleah">
+                    <img src="./img/Methuselah1.jpg" alt="Methusaleah forest">
                 </div>
                 <div class="piece-info-container" onmousedown="showInfoOnMouseDown(this,2,2)" onmouseup="hideInfoOnMouseUp(this,2,2)">                      
-                    <img src="./img/Methuselah2.jpg" alt="Methusaleah">
+                    <img src="./img/Methuselah2.jpg" alt="Methusaleah tree detail">
                 </div>         
             </div>                                   
         </section>
         <section  class="piece-container" id="piece4">
-            <img src="" alt="Piece Image">
-            <p class="description-paragraph">
-                
-            </p>
+            <h2 class="piece-name">Ginkgo</h2>  
+            <p class="piece-instruction-text">Si desea conocer el Ginkgo haga click en la imagen y presione la tecla "G"</p>
+            <div class="piece-content-container">
+                <img src="./img/ginkgo.jpg" alt="gingko tree" id="piece4-image" onclick="setOnKeyDownTarget(this)">
+            </div>   
         </section>
         <section  class="piece-container" id="piece5">
-            <img src="" alt="Piece Image">
-            <p class="description-paragraph">
-                
-            </p>
-        </section>
+            <h2 class="piece-name">Tuátara</h2>  
+            <p class="piece-instruction-text">Haciendo clik en la imagen podrá ver información de la Tuátara</p>
+            <div class="piece-content-container">
+                <img src="./img/Tuatara.jpg" alt="Tuetara(Reptíl)" onclick="showInfoOnClick(this,4)">
+            </div>  
+        </section>   
         
-        <button onclick="mostrarPando()">Pando</button>
-
-        
-
     </main>  
     <script src="./js/index.js"></script>  
 </body>

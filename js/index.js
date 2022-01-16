@@ -1,5 +1,7 @@
 
 let collection = new Collection();
+let onKeyDownTarget;
+
 collection.startCollection();
 
 function showInfoOnMouseOver(x,pieceIndex,descripIndex){
@@ -20,7 +22,8 @@ function showInfoOnDoubleClick(x,pieceIndex){
     let divStr = '<div class="piece-info-container"><p>'+collection.getPieces()[pieceIndex].getDescription()[0]+'</p><p>'+collection.getPieces()[pieceIndex].getDescription()[1]+'</p></div>';
     x.insertAdjacentHTML('beforebegin',divStr );
     let divStr1 = '<div class="piece-info-container"><p>'+collection.getPieces()[pieceIndex].getDescription()[2]+'</p><p>'+collection.getPieces()[pieceIndex].getDescription()[3]+'</p></div>';
-    x.insertAdjacentHTML('afterend',divStr1);      
+    x.insertAdjacentHTML('afterend',divStr1); 
+    x.ondblclick = "";     
 }
 
 function showInfoOnMouseDown(x,pieceIndex,descripIndex){
@@ -46,4 +49,21 @@ function hideInfoOnMouseUp(x,pieceIndex,descripIndex){
     let image = document.createElement('img');    
     image.src = collection.getPieces()[pieceIndex].getImage()[descripIndex];    
     x.appendChild(image);
+}
+
+function setOnKeyDownTarget(x){
+    onKeyDownTarget = x;    
+}
+
+document.addEventListener('keydown', (event) =>{
+    if (event.code === "KeyG"){      
+        let htmlCode = '<div class="piece-info-container"><p>'+collection.getPieces()[3].getDescription()[0]+'</p><p>'+collection.getPieces()[3].getDescription()[1]+'</p><p>'+collection.getPieces()[3].getDescription()[2]+'</p></div>';       
+        onKeyDownTarget.insertAdjacentHTML('afterend',htmlCode);       
+    }        
+});
+
+function showInfoOnClick(x,pieceIndex){
+    let htmlCode = '<div class="piece-info-container"><p>'+collection.getPieces()[pieceIndex].getDescription()[0]+'</p><p>'+collection.getPieces()[pieceIndex].getDescription()[1]+'</p></div>';       
+    x.insertAdjacentHTML('beforebegin',htmlCode);  
+    x.onclick="";    
 }

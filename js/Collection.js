@@ -52,9 +52,30 @@ class Collection{
             ]
             );  
         this.pieces.push(piece3);  
-        
 
+        let piece4 = new Piece("Ginkgo");
+        piece4.image = ["./img/ginkgo"];
+        piece4.setDescription(
+            [
+            "Ginkgo es un género de gimnospermas. Este clado, de amplia distribución temporal pues se conocen fósiles desde el Triásico hasta el Mioceno, tuvo su máxima diversidad durante el Mesozoico. De las más de 30 especies conocidas únicamente una de ellas Ginkgo biloba sobrevive en la actualidad. Los científicos creen que, en el pasado, el mundo contenía muchas especies diferentes de ginkgo." 
+            ,
+            "Las plantas fosilizadas halladas en una mina de carbón en la región central de China que se remontan a hace 170 millones de años muestran árboles ginkgo con solo ligeras variaciones en la forma de sus hojas y en el número de semillas. La especie Ginkgo biloba constituye uno de los mejores ejemplos de relicto o fósil viviente conocidos y existe hace 250 millones de años."
+            ,
+            "La especie suele describirse como fósil viviente —una categoría en la que también figuran el cangrejo cacerola y el helecho Osmunda regalis— porque es un resto de un grupo que antes era diverso y que existió hace millones de años. Como el ginkgo es una especie tan antigua, retiene características que no suelen observarse en árboles modernos."    
+            ]
+            ); 
+        this.pieces.push(piece4); 
 
+        let piece5 = new Piece("Tuátara");
+        piece5.image = ["./img/Tuatara.jpg"]
+        piece5.setDescription(
+            [
+            "Los tuátaras o esfenodontes (género Sphenodon) son reptiles endémicos de las islas aledañas a Nueva Zelanda, constituyen al único género del orden Sphenodontia que ha sobrevivido hasta la actualidad, prácticamente sin cambios desde la Era Mesozoica. El significado de su nombre común proviene del maorí y quiere decir espalda espinosa, para ellos el tuátara es considerado un taonga (tesoro especial).​ A primera vista (por convergencia evolutiva) son parecidas a las iguanas, con las que, sin embargo, no están cercanamente emparentadas."    
+            ,
+            "Las dos especies actuales de tuátaras y la extinta conocida tienen parientes muy cercanos que existieron hace ya 200 millones de años, a la par de los dinosaurios. En esas épocas habitaban el supercontinente de Gondwana habiéndose distribuido, según parece, desde el área que hoy corresponde a América del Sur pasando por la Antártida hasta Australia. Al separarse de Australia por deriva continental, Nueva Zelanda se convertiría en el único reducto actual de Sphenodontidae, motivo por el cual se califica a estos animales como fósiles vivientes.  Aunque los tuátaras hayan conservado características morfológicas de sus antepasados del Mesozoico (240 - 230 millones de años), no hay evidencias de un registro fósil continuo que lo defina. "
+            ]
+            );
+        this.pieces.push(piece5)
         }
 
 }

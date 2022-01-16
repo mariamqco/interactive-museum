@@ -26,7 +26,7 @@ class Collection{
         this.pieces.push(piece1); 
         
         let piece2 = new Piece("Old Tjikko");
-        piece2.setImage(["./img/Old-Tjikko1.jpg","./img/Old-Tjikko.jpg"])
+        piece2.setImage(["./img/Old-Tjikko1.jpg","./img/Old-Tjikko.jpg"]);
         piece2.setDescription(
             [
             "El Old Tjikko es una pícea de Noruega de 9558 años de antigüedad, ubicado en el Parque nacional de Fulufjället, Provincia de Dalarna en Suecia. originalmente ganó fama como el árbol más antiguo del mundo. Old Tjikko es, sin embargo, un árbol clonal que ha regenerado nuevos troncos, ramas y raíces durante milenios en lugar de un árbol individual de gran edad. Old Tjikko es el árbol clonado más antiguo del mundo. Sin embargo, hay muchos ejemplos de colonias clonales (múltiples árboles conectados por un sistema de raíces comunes) mucho más antiguas, como Pando."
@@ -38,8 +38,23 @@ class Collection{
             "Durante miles de años el árbol no fue más que un arbusto debido a que las condiciones eran muy frías para que pudiera crecer más. Sin embargo, a medida que el planeta se va calentando puede tener un desarrollo normal, tanto es así que ahora mismo mide 5 metros de alto."
             ]
             );    
-        this.pieces.push(piece2);     
-            
+        this.pieces.push(piece2); 
+
+        let piece3 = new Piece("Matusalén");
+        piece3.image = ["./img/Methuselah.jpg","./img/Methuselah1.jpg","./img/Methuselah2.jpg"];
+        piece3.setDescription(
+            [
+            "El árbol vivo más viejo del mundo tiene 4.847 años, se llama Matusalén, en un guiño al personaje bíblico que vivió hasta los 969 años, y se encuentra en el Bosque Nacional Inyo, en el centro de California, Estados Unidos. Es un ejemplar de Pinus longaeva, la especie que descubrió en la década de 1930 Edmund Schulman, un paleontólogo que se dedicaba a fechar sequías y eventos cósmicos a través de los anillos de los árboles." 
+            ,
+            "Estos pinos crecen a más de 3.000 metros sobre el nivel del mar, en una tierra árida azotada por vientos helados. Y es esa adversidad del ambiente lo que los hace tan longevos. Gracias a los intempestivos vientos, su tronco se fortalece y forma una gruesa capa de resina que los protege de la putrefacción y de parásitos u hongos. Así que, según los expertos, Matusalén es un pino torcido, enredado en sí mismo, un árbol que parece más muerto que vivo, una suerte de escultura natural."
+            ,
+            "Sin embargo, por muchos detalles que hayan salido a la luz sobre el aspecto de Matusalén, a menos que seas uno de los científicos que lo investigan no podrás conocerlo. El Servicio Forestal de Estados Unidos se niega a revelar sus coordenadas exactas para evitar vandalismos. Ni siquiera se ha difundido fotografía alguna de Matusalén, por lo que las imágenes mostradas no pertenece al árbol en cuestión, sino a otro ejemplar milenario del Bosque Nacional de Inyo."           
+            ]
+            );  
+        this.pieces.push(piece3);  
+        
+
+
         }
 
 }
